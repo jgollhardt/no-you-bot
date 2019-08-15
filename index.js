@@ -12,7 +12,7 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
-  var nou = client.emojis.find(emoji => emoji.name == "ooookie");
+  var nou = client.emojis.find(emoji => emoji.name == "nou");
 
   if (msg.content.includes(nou.id)) {
     const {
