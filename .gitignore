@@ -1,0 +1,3 @@
+node_modules
+# lowdb file
+db.json
