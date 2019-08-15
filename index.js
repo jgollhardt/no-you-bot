@@ -1,6 +1,6 @@
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
-const { Client, MessageEmbed } = require("discord.js");
+const { Client, RichEmbed } = require("discord.js");
 
 const adapter = new FileSync("db.json");
 const db = low(adapter);
@@ -26,7 +26,7 @@ client.on("message", msg => {
   }
 
   if (msg.content === "!nou") {
-    const embed = new MessageEmbed()
+    const embed = new RichEmbed()
       .setTitle("Leaderboard")
       .setColor(0xf56ce3)
       .setThumbnail("https://i.imgur.com/eRGro1C.jpg")
